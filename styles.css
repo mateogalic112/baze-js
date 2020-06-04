@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: grey;
+}
+
+h2, h4, h5 {
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: wheat;
+  margin: 10rem auto;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.form-label {
+  width: 100%;
+  text-align: center;
+}
+
+input, select {
+  width: 90%;
+  padding: 0.3rem;
+}
+
+#decompose-btn {
+  border: 1px solid black;
+  outline: none;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  margin-top: 2em;
+  cursor: pointer;
+  background-color: thistle;
+  font-weight: bold;
+  width: 100%;
+}
+
+.tables-container {
+    margin-top: 1em;
+}
+
+.tables-container h3 {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: .5em;
+}
+
+.table {
+    margin: -1em auto;
+    display: flex;
+    padding: 0 1em;
+}
+
+.table h4 {
+    flex: 5;
+}
+
+.table-buttons {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.table-buttons button {
+    margin: 0 .3em;
+}

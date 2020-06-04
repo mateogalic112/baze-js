@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baze Podataka 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <h2>Baze Podataka 2 - Seminar</h2>
+      <form id="forma">
+        <div class="form-label">
+          <h3>Relacijska Shema</h3>
+          <input type="text" id="shema" placeholder="ABCD" />
+        </div>
+        <div class="form-label">
+          <h3>Ključevi</h3>
+          <input type="text" id="keys" placeholder="ABC, BCD" />
+        </div>
+        <div class="form-label">
+          <h3>Funkc. ovisnosti</h3>
+          <input type="text" id="cover" placeholder="A->B, C->D" />
+        </div>
+        <button id="decompose-btn" type="submit">Dekomponiraj</button>
+      </form>
+      <div class="decompose-current">
+          <!--Place for Decomposition-->
+      </div>
+      <div class="tables-container">
+            <h3>History</h3>
+            <div class="table">
+                <h4>Table1</h4>
+                <div class="table-buttons">
+                    <button id="edit">Edit</button>
+                    <button id="delete">Delete</button>
+                </div>
+            </div>
+            <div class="table">
+                <h4>Table2</h4>
+                <div class="table-buttons">
+                    <button id="edit">Edit</button>
+                    <button id="delete">Delete</button>
+                </div>
+            </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
