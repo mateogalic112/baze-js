@@ -5,7 +5,9 @@ body {
   background-color: grey;
 }
 
-h2, h4, h5 {
+h2,
+h4,
+h5 {
   text-align: center;
 }
 
@@ -23,7 +25,8 @@ h2, h4, h5 {
   text-align: center;
 }
 
-input, select {
+input,
+select {
   width: 90%;
   padding: 0.3rem;
 }
@@ -41,31 +44,32 @@ input, select {
 }
 
 .tables-container {
-    margin-top: 1em;
+  margin-top: 1em;
+}
+
+.decompose-current h5 {
+  font-size: 1.2em;
 }
 
 .tables-container h3 {
-    text-align: center;
-    border-bottom: 1px solid grey;
-    padding-bottom: .5em;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 0.5em;
 }
 
 .table {
-    margin: -1em auto;
-    display: flex;
-    padding: 0 1em;
+  margin: -1em auto;
+  display: flex;
+  padding: 0 1em;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.table h4 {
-    flex: 5;
-}
-
-.table-buttons {
-    display: flex;
-    flex: 1;
-    align-items: center;
-}
-
-.table-buttons button {
-    margin: 0 .3em;
+.table button {
+  width: 60px;
+  height: 25px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: lightgreen;
 }
