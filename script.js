@@ -4,11 +4,16 @@ function Table(shema, keys, cover) {
 }
 
 var tables = [
-  new Table("ABCDEFG", "ACG, ACB, ACE", "A->D, AG->B, B->G, B->E, E->B, E->F"),
-  //new Table("ABCDEFG", "ABD, CDE, EFG", "A->C, B->D"),
+  new Table("ABCDEFGHIJ", "ACG, ACB, ACE", "A->D, AG->B, B->G, B->E, E->B, E->F"),
+  new Table("ABCDEFGHIJKL", "ABG, AC, AEH", "A->E, AB->C, B->G, G->B, H->B"),
+  new Table("ABCDEFGHIJKLMN", "AG, CB, CE", "B->D, B->H, H->G, AB->E, ME->N, L->M"),
+  new Table("ABCDEFGHIJK", "IJK, EFG, CDE", "IK->D, AE->B, JK->L, CD->E, E->B, E->F"),
+  new Table("ABCDEFGHIJ", "BCD, EFG, IJ", "B->A, G->I, J->G, C->I, D->I, E->F"),
 ];
 
+// Inicijalno postavlja vrijednsot tablica
 insertRow();
+// Daje Event Listenere botunima
 editRow();
 
 // Botun za dekomponranje
