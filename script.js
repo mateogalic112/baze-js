@@ -27,12 +27,12 @@ function decompose(e) {
   var keyHere = false;
 
   // Provjera validnosti
-  if(shemaElement.value === '') alert("Nedostaje Shema");
-  else if(keysElement.value === '') alert("Nedostaju Ključevi");
-  else if(coverElement.value === '') alert("Nedostaju FO");
+  if (shemaElement.value === "") alert("Nedostaje Shema");
+  else if (keysElement.value === "") alert("Nedostaju Ključevi");
+  else if (coverElement.value === "") alert("Nedostaju FO");
   // Splitanje funkc. ovisnosti po zarezu i za svaku za map uklanjamo razmake
   coverElementValues = coverElement.value.split(",").map((e) => e.trim());
-  
+
   // Dodavanje elemenata u dekompoziciju
   for (var i = 0; i < coverElementValues.length; ++i) {
     coverElementValues[i] = coverElementValues[i].replace("->", "");
@@ -69,9 +69,9 @@ function decompose(e) {
   editRow();
 
   // Postavljanje vrijednosti polja na prazni string
-  shemaElement.value = "";
+  /* shemaElement.value = "";
   keysElement.value = "";
-  coverElement.value = "";
+  coverElement.value = ""; */
 
   // Postavljanje dekompozicije na prazni array
   ro = [];
@@ -116,16 +116,15 @@ function insertRow() {
   var tablesArea = document.getElementsByClassName("tables-container")[0];
   tables.map(createTableRow);
   function createTableRow(t, index) {
-    var tableRow = document.createElement("div"); 
+    var tableRow = document.createElement("div");
     tableRow.classList.add("table");
     var rowContent = `
     <h4>Table ${index}</h4>
     <button class="edit">Look</button>
     `;
-    tableRow.innerHTML = rowContent; 
+    tableRow.innerHTML = rowContent;
     tablesArea.append(tableRow);
   }
-
 }
 // Postavljanje input polja na vrijednosti od kliknutog table rowa
 function editRow() {
